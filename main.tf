@@ -13,7 +13,8 @@ provider "azurerm" {
   subscription_id = "0e01e4d0-ef71-4105-81fd-346e52ee7351"
 }
 
-resource "azurerm_resource_group" "rg_sanjay" {
-  name     = "rg_sanjay"
+resource "azurerm_resource_group" "rg_rohit" {
+  name     = "rg_rohit"
   location = "West Europe"
 }
+
