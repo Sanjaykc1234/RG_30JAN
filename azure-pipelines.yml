@@ -2,7 +2,7 @@ name: job-pipeline
 
 trigger: none
 
-pool: vinod
+pool: Vinod
 
 jobs:
 - job: terraform_install
