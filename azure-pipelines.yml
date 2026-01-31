@@ -12,6 +12,11 @@ jobs:
     inputs:
       terraformVersion: 'latest'
 
+  - script: |
+    echo "##vso[task.setvariable variable=TF_LOG]TRACE"
+    echo "##vso[task.setvariable variable=TF_LOG_PATH]terraform.log"
+  displayName: Enable Terraform Debug Logs
+  
 - job: terraform_init
   displayName: Terraform Init
   dependsOn: terraform_install
